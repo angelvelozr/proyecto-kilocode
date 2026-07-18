@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AyudaYa | Design System</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="app-shell app-shell--guide">
+  <header class="hero hero--guide">
+    <div class="hero__badge">Sistema visual vivo</div>
+    <h1 class="hero__title">AyudaYa</h1>
+    <p class="hero__text">Un sistema de interfaz diseñado para reportes comunitarios claros, confiables y fáciles de usar desde el celular.</p>
+    <nav class="hero__actions" aria-label="Pantallas del prototipo">
+      <a class="button button--primary" href="login.html">Ver login</a>
+      <a class="button button--secondary" href="reportes.html">Ver reportes</a>
+      <a class="button button--secondary" href="crear-reporte.html">Crear reporte</a>
+    </nav>
+  </header>
+
+  <main class="guide-layout">
+    <section class="guide-section">
+      <div class="section-heading">
+        <p class="section-heading__eyebrow">Paleta</p>
+        <h2 class="section-heading__title">Colores base</h2>
+      </div>
+      <div class="swatch-grid">
+        <article class="swatch-card">
+          <div class="swatch-card__color" style="background: var(--color-primary);"></div>
+          <h3>--color-primary</h3>
+          <p>Confianza institucional</p>
+        </article>
+        <article class="swatch-card">
+          <div class="swatch-card__color" style="background: var(--color-secondary);"></div>
+          <h3>--color-secondary</h3>
+          <p>Cercanía comunitaria</p>
+        </article>
+        <article class="swatch-card">
+          <div class="swatch-card__color" style="background: var(--color-success);"></div>
+          <h3>--color-success</h3>
+          <p>Casos resueltos</p>
+        </article>
+        <article class="swatch-card">
+          <div class="swatch-card__color" style="background: var(--color-danger);"></div>
+          <h3>--color-danger</h3>
+          <p>Errores y alertas</p>
+        </article>
+        <article class="swatch-card">
+          <div class="swatch-card__color" style="background: var(--color-surface);"></div>
+          <h3>--color-surface</h3>
+          <p>Tarjetas y bloques</p>
+        </article>
+        <article class="swatch-card">
+          <div class="swatch-card__color" style="background: var(--color-background);"></div>
+          <h3>--color-background</h3>
+          <p>Base general</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section">
+      <div class="section-heading">
+        <p class="section-heading__eyebrow">Tipografía</p>
+        <h2 class="section-heading__title">Escala de texto</h2>
+      </div>
+      <div class="type-scale">
+        <div class="type-scale__item">
+          <p class="caption">Display / --font-size-display</p>
+          <p class="display-text">Tu barrio también merece respuesta.</p>
+        </div>
+        <div class="type-scale__item">
+          <p class="caption">Título / --font-size-title</p>
+          <h2 class="sample-title">Reporta rápido. Haz visible el problema.</h2>
+        </div>
+        <div class="type-scale__item">
+          <p class="caption">Subtítulo / --font-size-subtitle</p>
+          <h3 class="sample-subtitle">Una interfaz para líderes y ciudadanos.</h3>
+        </div>
+        <div class="type-scale__item">
+          <p class="caption">Cuerpo / --font-size-body</p>
+          <p class="body-text">El lenguaje visual prioriza legibilidad, botones generosos y contraste suficiente para usar la plataforma en movimiento.</p>
+        </div>
+        <div class="type-scale__item">
+          <p class="caption">Caption / --font-size-caption</p>
+          <p class="caption-text">Textos auxiliares, fechas, estado y microcopys de apoyo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="guide-section">
+      <div class="section-heading">
+        <p class="section-heading__eyebrow">Espaciado</p>
+        <h2 class="section-heading__title">Escala modular</h2>
+      </div>
+      <div class="spacing-scale">
+        <div class="spacing-item">
+          <span class="spacing-item__label">--space-1</span>
+          <div class="spacing-item__bar spacing-item__bar--1"></div>
+        </div>
+        <div class="spacing-item">
+          <span class="spacing-item__label">--space-2</span>
+          <div class="spacing-item__bar spacing-item__bar--2"></div>
+        </div>
+        <div class="spacing-item">
+          <span class="spacing-item__label">--space-3</span>
+          <div class="spacing-item__bar spacing-item__bar--3"></div>
+        </div>
+        <div class="spacing-item">
+          <span class="spacing-item__label">--space-4</span>
+          <div class="spacing-item__bar spacing-item__bar--4"></div>
+        </div>
+        <div class="spacing-item">
+          <span class="spacing-item__label">--space-5</span>
+          <div class="spacing-item__bar spacing-item__bar--5"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="guide-section">
+      <div class="section-heading">
+        <p class="section-heading__eyebrow">Componentes</p>
+        <h2 class="section-heading__title">Piezas core del sistema</h2>
+      </div>
+
+      <div class="component-block">
+        <h3 class="component-block__title">Botones</h3>
+        <div class="button-row">
+          <button class="button button--primary" type="button">Enviar reporte</button>
+          <button class="button button--secondary" type="button">Ver detalles</button>
+          <button class="button button--primary" type="button" disabled>Deshabilitado</button>
+        </div>
+      </div>
+
+      <div class="component-block">
+        <h3 class="component-block__title">Inputs</h3>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="demo-nombre">Nombre del reporte</label>
+            <input id="demo-nombre" type="text" placeholder="Ej. Poste sin luz en calle 12">
+          </div>
+          <div class="form-field form-field--error">
+            <label for="demo-usuario">Usuario</label>
+            <input id="demo-usuario" type="text" value="" placeholder="Ingresa tu usuario" aria-describedby="demo-usuario-error">
+            <p id="demo-usuario-error" class="field-message">Este campo es obligatorio.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="component-block">
+        <h3 class="component-block__title">Badges</h3>
+        <div class="badge-row">
+          <span class="badge badge--status-pending">Pendiente</span>
+          <span class="badge badge--status-progress">En proceso</span>
+          <span class="badge badge--status-done">Resuelto</span>
+          <span class="badge badge--category-road">Bache</span>
+          <span class="badge badge--category-light">Alumbrado</span>
+          <span class="badge badge--category-security">Inseguridad</span>
+        </div>
+      </div>
+
+      <div class="component-block">
+        <h3 class="component-block__title">Card de reporte</h3>
+        <article class="report-card">
+          <div class="report-card__meta">
+            <span class="badge badge--category-light">Alumbrado</span>
+            <span class="badge badge--status-progress">En proceso</span>
+          </div>
+          <h4 class="report-card__title">Lámpara apagada frente al parque</h4>
+          <p class="report-card__location">Cdla. Las Orquídeas, Mz. 14, junto a la cancha</p>
+          <div class="report-card__footer">
+            <span>Reportado: 08 Jul 2026</span>
+            <a href="reportes.html">Ver seguimiento</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="component-block">
+        <h3 class="component-block__title">Navbar móvil</h3>
+        <nav class="mobile-nav mobile-nav--preview" aria-label="Navegación principal de ejemplo">
+          <a class="mobile-nav__item" href="login.html">
+            <span class="mobile-nav__icon">&#8962;</span>
+            <span class="mobile-nav__label">Inicio</span>
+          </a>
+          <a class="mobile-nav__item mobile-nav__item--active" href="reportes.html">
+            <span class="mobile-nav__icon">&#9638;</span>
+            <span class="mobile-nav__label">Reportes</span>
+          </a>
+          <a class="mobile-nav__item" href="crear-reporte.html">
+            <span class="mobile-nav__icon">+</span>
+            <span class="mobile-nav__label">Nuevo</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

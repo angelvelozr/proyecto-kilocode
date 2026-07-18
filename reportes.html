@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AyudaYa | Reportes</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="screen-page">
+  <main class="screen-layout screen-layout--list">
+    <header class="screen-header">
+      <div>
+        <p class="screen-header__eyebrow">Seguimiento comunitario</p>
+        <h1 class="screen-header__title">Reportes activos</h1>
+      </div>
+      <a class="button button--secondary" href="index.html">Sistema</a>
+    </header>
+
+    <section class="summary-banner" aria-label="Resumen de actividad">
+      <p class="summary-banner__label">Tu sector hoy</p>
+      <p class="summary-banner__value">4 incidencias registradas</p>
+      <p class="summary-banner__text">2 en proceso, 1 pendiente y 1 resuelta.</p>
+    </section>
+
+    <section class="report-list" aria-label="Listado de reportes">
+      <article class="report-card">
+        <div class="report-card__meta">
+          <span class="badge badge--category-road">Bache</span>
+          <span class="badge badge--status-pending">Pendiente</span>
+        </div>
+        <h2 class="report-card__title">Hueco grande frente a la parada</h2>
+        <p class="report-card__location">Coop. Nueva Esperanza, calle principal y pasaje 3</p>
+        <div class="report-card__footer">
+          <span>06 Jul 2026</span>
+          <a href="crear-reporte.html">Actualizar</a>
+        </div>
+      </article>
+
+      <article class="report-card">
+        <div class="report-card__meta">
+          <span class="badge badge--category-light">Alumbrado</span>
+          <span class="badge badge--status-progress">En proceso</span>
+        </div>
+        <h2 class="report-card__title">Poste sin luz en ingreso al callejón</h2>
+        <p class="report-card__location">Suburbio oeste, calle 28 y la M</p>
+        <div class="report-card__footer">
+          <span>07 Jul 2026</span>
+          <a href="crear-reporte.html">Actualizar</a>
+        </div>
+      </article>
+
+      <article class="report-card">
+        <div class="report-card__meta">
+          <span class="badge badge--category-security">Inseguridad</span>
+          <span class="badge badge--status-progress">En proceso</span>
+        </div>
+        <h2 class="report-card__title">Zona oscura cerca de la cancha</h2>
+        <p class="report-card__location">Guasmo sur, bloque 7, junto al parque lineal</p>
+        <div class="report-card__footer">
+          <span>08 Jul 2026</span>
+          <a href="crear-reporte.html">Actualizar</a>
+        </div>
+      </article>
+
+      <article class="report-card">
+        <div class="report-card__meta">
+          <span class="badge badge--category-light">Alumbrado</span>
+          <span class="badge badge--status-done">Resuelto</span>
+        </div>
+        <h2 class="report-card__title">Luminaria reparada en la esquina</h2>
+        <p class="report-card__location">Mapasingue este, mz. 5 villa 11</p>
+        <div class="report-card__footer">
+          <span>09 Jul 2026</span>
+          <a href="index.html">Ver sistema</a>
+        </div>
+      </article>
+    </section>
+
+    <a class="floating-action" href="crear-reporte.html" aria-label="Crear nuevo reporte">Nuevo reporte</a>
+  </main>
+
+  <nav class="mobile-nav" aria-label="Navegación principal">
+    <a class="mobile-nav__item" href="login.html">
+      <span class="mobile-nav__icon">&#8962;</span>
+      <span class="mobile-nav__label">Inicio</span>
+    </a>
+    <a class="mobile-nav__item mobile-nav__item--active" href="reportes.html">
+      <span class="mobile-nav__icon">&#9638;</span>
+      <span class="mobile-nav__label">Reportes</span>
+    </a>
+    <a class="mobile-nav__item" href="crear-reporte.html">
+      <span class="mobile-nav__icon">+</span>
+      <span class="mobile-nav__label">Nuevo</span>
+    </a>
+  </nav>
+</body>
+</html>

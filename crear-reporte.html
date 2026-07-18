@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AyudaYa | Crear reporte</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="screen-page">
+  <main class="screen-layout screen-layout--form">
+    <header class="screen-header">
+      <div>
+        <p class="screen-header__eyebrow">Nuevo caso</p>
+        <h1 class="screen-header__title">Crear reporte</h1>
+      </div>
+      <a class="button button--secondary" href="reportes.html">Volver</a>
+    </header>
+
+    <form class="report-form" action="reportes.html">
+      <div class="form-field">
+        <label for="titulo">Título del reporte</label>
+        <input id="titulo" name="titulo" type="text" placeholder="Ej. Basura acumulada junto al mercado">
+      </div>
+
+      <div class="form-field">
+        <label for="categoria">Categoría</label>
+        <select id="categoria" name="categoria">
+          <option>Selecciona una categoría</option>
+          <option>Bache</option>
+          <option>Alumbrado</option>
+          <option>Inseguridad</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" name="descripcion" rows="5" placeholder="Describe el problema y cómo afecta al sector"></textarea>
+      </div>
+
+      <div class="form-field">
+        <label for="foto">Foto del problema</label>
+        <div id="foto" class="placeholder-box" role="img" aria-label="Espacio reservado para una foto del reporte">
+          <span class="placeholder-box__icon">&#9633;</span>
+          <span>Adjuntar foto</span>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="mapa">Ubicación en mapa</label>
+        <div id="mapa" class="placeholder-box placeholder-box--map" role="img" aria-label="Espacio reservado para la ubicación en mapa">
+          <span class="placeholder-box__icon">&#9678;</span>
+          <span>Marcar ubicación</span>
+        </div>
+      </div>
+
+      <button class="button button--primary button--full" type="submit">Enviar reporte</button>
+    </form>
+  </main>
+
+  <nav class="mobile-nav" aria-label="Navegación principal">
+    <a class="mobile-nav__item" href="login.html">
+      <span class="mobile-nav__icon">&#8962;</span>
+      <span class="mobile-nav__label">Inicio</span>
+    </a>
+    <a class="mobile-nav__item" href="reportes.html">
+      <span class="mobile-nav__icon">&#9638;</span>
+      <span class="mobile-nav__label">Reportes</span>
+    </a>
+    <a class="mobile-nav__item mobile-nav__item--active" href="crear-reporte.html">
+      <span class="mobile-nav__icon">+</span>
+      <span class="mobile-nav__label">Nuevo</span>
+    </a>
+  </nav>
+</body>
+</html>
