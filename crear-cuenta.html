@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AyudaYa | Crear cuenta</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="auth-page">
+  <main class="auth-card">
+    <div class="brand-mark" aria-hidden="true">
+      <span class="brand-mark__ring"></span>
+      <span class="brand-mark__dot"></span>
+    </div>
+    <p class="auth-card__eyebrow">Acceso ciudadano</p>
+    <h1 class="auth-card__title">Crea tu cuenta</h1>
+    <p class="auth-card__text">Regístrate para reportar problemas de tu comunidad y dar seguimiento a las gestiones.</p>
+
+    <form class="auth-form" action="login.html">
+      <div class="form-field">
+        <label for="nombre">Nombre completo</label>
+        <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre y apellido">
+      </div>
+
+      <div class="form-field">
+        <label for="cedula">Cédula</label>
+        <input id="cedula" name="cedula" type="text" inputmode="numeric" autocomplete="off" placeholder="Ej. 0102030405">
+      </div>
+
+      <div class="form-field">
+        <label for="usuario">Usuario</label>
+        <input id="usuario" name="usuario" type="text" autocomplete="username" placeholder="Elige un usuario">
+      </div>
+
+      <div class="form-field">
+        <label for="usuario-confirma">Confirmar usuario</label>
+        <input id="usuario-confirma" name="usuario-confirma" type="text" autocomplete="username" placeholder="Repite tu usuario">
+      </div>
+
+      <div class="form-field">
+        <label for="clave">Contraseña</label>
+        <input id="clave" name="clave" type="password" autocomplete="new-password" placeholder="Crea una contraseña">
+      </div>
+
+      <div class="form-field">
+        <label for="clave-confirma">Confirmar contraseña</label>
+        <input id="clave-confirma" name="clave-confirma" type="password" autocomplete="new-password" placeholder="Repite tu contraseña">
+      </div>
+
+      <button class="button button--primary button--full" type="submit">Crear cuenta</button>
+    </form>
+
+    <div class="auth-card__links">
+      <a href="login.html">Ya tengo cuenta</a>
+      <a href="index.html">Ver sistema visual</a>
+    </div>
+  </main>
+</body>
+</html>
