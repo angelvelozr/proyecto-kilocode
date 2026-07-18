@@ -17,12 +17,12 @@
   --line-height-tight: 1.1;
   --line-height-normal: 1.5;
 
-  --color-primary: #0f5c5e;
-  --color-primary-strong: #093d3f;
-  --color-secondary: #e88f4a;
-  --color-secondary-soft: #f8e0c8;
-  --color-success: #287d56;
-  --color-success-soft: #d9efe3;
+  --color-primary: #6EC1E4;
+  --color-primary-strong: #4A9BB8;
+  --color-secondary: #54595F;
+  --color-secondary-soft: #8A9199;
+  --color-success: #61CE70;
+  --color-success-soft: #E8F8ED;
   --color-danger: #b7473a;
   --color-danger-soft: #f9ddd8;
   --color-status-pending: #8f5b1b;
@@ -31,12 +31,12 @@
   --color-status-progress-soft: #d8e8fb;
   --color-road: #7a4f2d;
   --color-road-soft: #efdccf;
-  --color-light: #245d70;
-  --color-light-soft: #d8edf4;
+  --color-light: #4A9BB8;
+  --color-light-soft: #D4E8F2;
   --color-security: #6d3f86;
   --color-security-soft: #e9dcf2;
-  --color-text: #172033;
-  --color-text-muted: #5b6474;
+  --color-text: #2D3748;
+  --color-text-muted: #7A7A7A;
   --color-border: #cfd6df;
   --color-surface: #fffaf5;
   --color-surface-strong: #ffffff;
@@ -46,21 +46,21 @@
   --color-background-strong: rgba(255, 255, 255, 0.82);
   --color-background-secondary: rgba(255, 255, 255, 0.65);
   --color-background-secondary-hover: rgba(255, 255, 255, 0.92);
-  --color-overlay-warm: rgba(232, 143, 74, 0.18);
-  --color-overlay-hero-start: rgba(15, 92, 94, 0.98);
-  --color-overlay-hero-end: rgba(9, 61, 63, 0.95);
-  --color-overlay-hero-badge: rgba(255, 255, 255, 0.12);
-  --color-overlay-text-inverse: rgba(255, 250, 245, 0.88);
+  --color-overlay-warm: rgba(110, 193, 228, 0.12);
+  --color-overlay-hero-start: rgba(45, 85, 120, 0.95);
+  --color-overlay-hero-end: rgba(74, 155, 184, 0.88);
+  --color-overlay-hero-badge: rgba(255, 255, 255, 0.18);
+  --color-overlay-text-inverse: rgba(255, 255, 255, 0.92);
   --color-overlay-border-soft: rgba(207, 214, 223, 0.8);
   --color-overlay-border-strong: rgba(207, 214, 223, 0.88);
-  --color-overlay-primary: rgba(15, 92, 94, 0.16);
-  --color-overlay-primary-soft: rgba(15, 92, 94, 0.12);
-  --color-overlay-primary-focus: rgba(15, 92, 94, 0.18);
+  --color-overlay-primary: rgba(110, 193, 228, 0.18);
+  --color-overlay-primary-soft: rgba(110, 193, 228, 0.12);
+  --color-overlay-primary-focus: rgba(110, 193, 228, 0.25);
   --color-overlay-danger-focus: rgba(183, 71, 58, 0.12);
-  --color-overlay-texture: rgba(23, 32, 51, 0.08);
-  --color-overlay-nav: rgba(255, 250, 245, 0.94);
-  --color-overlay-grid-primary: rgba(15, 92, 94, 0.05);
-  --color-overlay-grid-secondary: rgba(232, 143, 74, 0.08);
+  --color-overlay-texture: rgba(45, 55, 72, 0.08);
+  --color-overlay-nav: rgba(255, 255, 255, 0.94);
+  --color-overlay-grid-primary: rgba(110, 193, 228, 0.06);
+  --color-overlay-grid-secondary: rgba(84, 89, 95, 0.06);
 
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -418,7 +418,7 @@ p {
 }
 
 .button--primary {
-  background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary));
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-strong));
   color: var(--color-surface-strong);
   box-shadow: var(--shadow-soft);
 }
